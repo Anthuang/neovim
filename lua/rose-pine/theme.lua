@@ -422,7 +422,7 @@ theme.plugins = {
   -- hop
   HopNextKey = { fg = p.iris, style = "bold" },
   HopNextKey1 = { fg = p.foam, style = "bold" },
-  HopNextKey2 = { fg = util.darken(p.foam, p.base, 0.3) },
+  HopNextKey2 = { fg = util.darken(p.foam, 0.3, p.base) },
   HopUnmatched = { fg = p.subtle },
 }
 
