@@ -59,7 +59,7 @@ theme.base = {
 	ErrorMsg = { fg = p.love, style = 'bold' },
 	FloatBorder = { fg = p.subtle },
 	FoldColumn = {},
-	Folded = { fg = p.text, bg = p.surface },
+	Folded = { fg = p.inactive, bg = p.surface },
 	IncSearch = { bg = p.highlight },
 	LineNr = { fg = p.inactive },
 	MatchParen = { fg = p.text, bg = p.overlay },
