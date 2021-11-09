@@ -60,6 +60,17 @@ function util.load()
 	require("rose-pine.galaxyline.theme")
 end
 
+local function hexToRgb(hex_str)
+  local hex = "[abcdef0-9][abcdef0-9]"
+  local pat = "^#(" .. hex .. ")(" .. hex .. ")(" .. hex .. ")$"
+  hex_str = string.lower(hex_str)
+
+  assert(string.find(hex_str, pat) ~= nil, "hex_to_rgb: invalid hex_str: " .. tostring(hex_str))
+
+  local r, g, b = string.match(hex_str, pat)
+  return { tonumber(r, 16), tonumber(g, 16), tonumber(b, 16) }
+end
+
 ---@param fg string foreground color
 ---@param bg string background color
 ---@param alpha number number between 0 and 1. 0 results in bg, 1 results in fg

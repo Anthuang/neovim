@@ -420,10 +420,10 @@ theme.plugins = {
 	NeogitHunkHeaderHighlight = { bg = p.highlight },
 
   -- hop
-    HopNextKey = { fg = p.iris, style = "bold" },
-    HopNextKey1 = { fg = p.foam, style = "bold" },
-    HopNextKey2 = { fg = util.darken(p.foam, 0.3) },
-    HopUnmatched = { fg = p.subtle },
+  HopNextKey = { fg = p.iris, style = "bold" },
+  HopNextKey1 = { fg = p.foam, style = "bold" },
+  HopNextKey2 = { fg = util.darken(p.foam, 0.3) },
+  HopUnmatched = { fg = p.subtle },
 }
 
 return theme
