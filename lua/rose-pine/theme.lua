@@ -1,4 +1,5 @@
 local p = require('rose-pine.palette')
+local util = require('rose-pine.util')
 
 local user_colors = vim.g.rose_pine_colors or {}
 local groups = {
@@ -417,6 +418,12 @@ theme.plugins = {
 	NeogitDiffContextHighlight = { bg = p.highlight },
 	NeogitHunkHeader = { bg = p.highlight },
 	NeogitHunkHeaderHighlight = { bg = p.highlight },
+
+  -- hop
+    HopNextKey = { fg = p.iris, style = "bold" },
+    HopNextKey1 = { fg = p.foam, style = "bold" },
+    HopNextKey2 = { fg = util.darken(p.foam, 0.3) },
+    HopUnmatched = { fg = p.subtle },
 }
 
 return theme
